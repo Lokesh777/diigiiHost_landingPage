@@ -76,7 +76,7 @@ export const brands = [
     description:
       "unifying global sports procurement into one smart, consolidated engine.",
     image:
-  "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=408&h=480&fit=crop",
+      "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=408&h=480&fit=crop",
   },
   {
     name: "Dr. Gaikwad",
@@ -87,7 +87,8 @@ export const brands = [
   {
     name: "Loma Dental",
     description: "proof that science, design, and soul can coexist.",
-    image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=408&h=480&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=408&h=480&fit=crop",
   },
 ];
 
@@ -156,11 +157,11 @@ export const serviceCards = [
 ];
 
 export const galleryImages = [
-  "/public/images/slide_pic1.jpg",
-  "/public/images/slide_pic2.jpg",
-  "/public/images/slide_pic3.jpg",
-  "/public/images/slide_pic4.jpg",
-  "/public/images/slide_pic5.jpg",
+  "https://ik.imagekit.io/csosdjgqgq/slide_pic1_zNBPf2IGX.jpg",
+  "https://ik.imagekit.io/csosdjgqgq/slide_pic2_EYXMzGroJ.jpg",
+  "https://ik.imagekit.io/csosdjgqgq/slide_pic3_RzSJZWKH3.jpg",
+  "https://ik.imagekit.io/csosdjgqgq/slide_pic4_ObeiXLaMc.jpg",
+  "https://ik.imagekit.io/csosdjgqgq/slide_pic5_NnSTB2CDN.jpg",
   "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=408&h=480&fit=crop",
   "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=408&h=480&fit=crop",
   "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=408&h=480&fit=crop",

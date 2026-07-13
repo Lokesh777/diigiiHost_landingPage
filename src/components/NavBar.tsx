@@ -4,7 +4,7 @@ export function NavBar() {
   return (
     <nav className="mx-auto flex w-full max-w-[1392px] items-center justify-between gap-4 rounded-full bg-primary px-8 py-2.5 md:px-8 md:py-2.5">
         <img
-          src="/logo.png"
+          src="https://ik.imagekit.io/csosdjgqgq/logo_zrLnE-C3T.png"
           alt="Alkesh Gupta"
           className="h-5 w-auto"
           onError={(e) => {
