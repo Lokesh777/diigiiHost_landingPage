@@ -69,6 +69,9 @@ Measured via Chrome DevTools Lighthouse (incognito, production build, `localhost
 | Cumulative Layout Shift | 0 |
 | Speed Index | 0.5 s |
 
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/c36add5c-9d92-4ff9-ae60-000882769dfe" />
+
+
 ### What got us there
 
 - **Image loading strategy** — every non-critical image (`gallery`, `brands`, `manifesto` side images) uses `loading="lazy"`; the hero/above-the-fold image loads eagerly so LCP isn't delayed.
