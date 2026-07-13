@@ -1,0 +1,9 @@
+<svg width="256" height="57" viewBox="0 0 256 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <text x="0" y="42" fill="url(#gold)" font-family="Outfit, sans-serif" font-size="36" font-weight="600">Alkesh Gupta</text>
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="256" y2="57" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8EEA4"/>
+      <stop offset="1" stop-color="#C7A008"/>
+    </linearGradient>
+  </defs>
+</svg>

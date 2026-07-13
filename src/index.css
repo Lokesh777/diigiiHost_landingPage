@@ -1,0 +1,86 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-bg: #f5f5f5;
+  --color-primary: #052c27;
+  --color-dark: #151515;
+  --color-muted: #5c5c5c;
+  --color-muted-dark: #3a3a3a;
+  --color-gold-light: #f8eea4;
+  --color-gold: #c7a008;
+  --font-altone: 'Outfit', system-ui, sans-serif;
+  --font-anton: 'Anton', sans-serif;
+  --font-kaushan: 'Kaushan Script', cursive;
+  --font-dancing: 'Dancing Script', cursive;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-altone);
+  background: var(--color-bg);
+  color: var(--color-dark);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  min-height: 100svh;
+}
+
+.text-gold-gradient {
+  background: linear-gradient(98.8deg, #f8eea4 33.68%, #c7a008 93.48%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gold-gradient-footer {
+  background: linear-gradient(98.41deg, #f8eea4 10.77%, #c7a008 93.44%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-signature-gradient {
+  background: linear-gradient(180deg, #c7a008 0%, #e7c873 50%, #fff2b0 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes marquee-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee-left 40s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
