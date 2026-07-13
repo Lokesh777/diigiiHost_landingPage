@@ -137,17 +137,20 @@ export const testimonials = [
 export const serviceCards = [
   {
     title: "Brand Identity",
-    image: "/public/images/philosopy_1.jpg",
+    image: "https://ik.imagekit.io/csosdjgqgq/philosopy_1_e89XZbb-U.jpg",
+    fallback: "/images/philosopy_1.jpg",
     offset: false,
   },
   {
     title: "Digital Infrastructure",
-    image: "/public/images/philosopy_2.jpg",
+    image: "https://ik.imagekit.io/csosdjgqgq/philosopy_2_hcLmxep1s.jpg",
+    fallback: "/images/philosopy_2.jpg",
     offset: true,
   },
   {
     title: "Image Re-engineering",
-    image: "/public/images/philosopy_3.jpg",
+    image: "https://ik.imagekit.io/csosdjgqgq/philosopy_3_Ki5XSMLyP.jpg",
+    fallback: "/images/philosopy_3.jpg",
     offset: false,
   },
 ];

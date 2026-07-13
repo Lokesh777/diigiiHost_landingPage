@@ -1,4 +1,5 @@
-const CLOSING_BG = '/public/images/myStories_01.png'
+const CLOSING_BG = 'https://ik.imagekit.io/csosdjgqgq/myStories_01_WYb1nLJ_1.png'
+const FALLBACK_CLOSING_BG = '/public/images/myStories_01.png'
 
 export function ClosingQuote() {
   return (
@@ -8,6 +9,9 @@ export function ClosingQuote() {
           src={CLOSING_BG}
           alt=""
           className="absolute inset-0 h-full w-full object-cover"
+          onError={(e) => {
+            e.currentTarget.src = FALLBACK_CLOSING_BG;
+          }}
         />
         <div className="absolute inset-0 bg-black/50" />
 

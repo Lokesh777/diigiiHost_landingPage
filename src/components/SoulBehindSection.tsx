@@ -1,5 +1,6 @@
-const BG = 'public/images/alkesh_gupta.jpg'
-const PORTRAIT = 'public/images/alkesh_gupta.jpg'
+const BG = 'https://ik.imagekit.io/csosdjgqgq/alkesh_gupta_IP-U6F69s.jpg'
+// const BG = 'public/images/alkesh_gupta.jpg'
+// const PORTRAIT = 'public/images/alkesh_gupta.jpg'
 
 export function SoulBehindSection() {
   return (

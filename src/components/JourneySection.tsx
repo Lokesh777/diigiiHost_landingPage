@@ -1,27 +1,18 @@
 import { useEffect, useRef, useState } from "react";
 import { galleryImages, serviceCards } from "../data/content";
 
-const JOURNEY_IMAGE = "/public/images/digi_bank.png";
+const JOURNEY_IMAGE = "https://ik.imagekit.io/csosdjgqgq/digi_bank_o6dEGMFCKA.png";
+const FALLBACK_JOURNEY_IMAGE = "/public/images/digi_bank.png";
 
 const GALLERY_VISIBLE_COUNT = 5;
 const GALLERY_SLIDE_INTERVAL = 2000;
 const GALLERY_SLIDE_DURATION = 600;
 
 export function JourneySection() {
-  const [startIndex, setStartIndex] = useState(0);
-
   const [galleryStart, setGalleryStart] = useState(0);
   const [gallerySliding, setGallerySliding] = useState(false);
   const [galleryStep, setGalleryStep] = useState(0);
   const galleryTrackRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setStartIndex((prev) => (prev + 1) % serviceCards.length);
-    }, 2000);
-
-    return () => clearInterval(interval);
-  }, []);
 
   // measure exact pixel distance between two gallery items (handles responsive widths)
   useEffect(() => {
@@ -49,10 +40,6 @@ export function JourneySection() {
 
     return () => clearInterval(interval);
   }, []);
-
-  const visibleCards = Array.from({ length: 5 }, (_, index) => {
-    return serviceCards[(startIndex + index) % serviceCards.length];
-  });
 
   // render one extra image beyond the visible 5 so it's already mounted to slide in from the right
   const galleryTrackImages = Array.from(
@@ -86,6 +73,9 @@ export function JourneySection() {
             alt=""
             className="h-full w-full object-cover"
             loading="lazy"
+            onError={(e) => {
+              e.currentTarget.src = FALLBACK_JOURNEY_IMAGE;
+            }}
           />
         </div>
         <p className="mx-auto mt-20 max-w-[500px] text-center font-[family-name:var(--font-altone)] text-xl font-light leading-[120%] text-muted">
@@ -143,7 +133,10 @@ export function JourneySection() {
                   src={card.image}
                   alt={card.title}
                   className="h-full w-full object-cover"
-                  // loading="lazy"
+                  loading="lazy"
+                  onError={(e) => {
+                    e.currentTarget.src = card.fallback;
+                  }}
                 />
               </div>
             </div>
